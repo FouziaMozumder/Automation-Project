@@ -28,7 +28,15 @@ allure open allure-report
 ```bash
 npm run test 
 ```
+### Run in different browser
 
+```bash
+ fullyParallel: true
+ ```
+### Run in same browser
 
+```bash
+ fullyParallel: false
+ ```
 
 

@@ -12,5 +12,4 @@ export class CommonLocators {
   resetAppStateLink() {
     return this.page.locator('//*[@id="reset_sidebar_link"]');
   }
-
 }

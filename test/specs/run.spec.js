@@ -91,5 +91,5 @@ test.describe('SauceDemo Scenarios', () => {
     await common.openMenu();
     await common.resetAppState();
     await common.logout();
-});
+  });
 });

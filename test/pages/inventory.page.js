@@ -6,23 +6,24 @@ export default class InventoryPage {
     this.locators = new InventoryLocators(page);
   }
 
-async addFirstNProducts(n) {
+  async addFirstNProducts(n) {
     const addedItems = [];
-
     const items = this.locators.inventoryItems();
     const total = await items.count();
+    const limit = Math.min(n, total);
 
-    for (let i = 0; i < n; i++) {
-      const item = items.nth(i);
-      const name = (await item.locator('.inventory_item_name').textContent()).trim();
-      addedItems.push(name);
-      //check the item name, console.log("Found inventory items:",name);
-      await item.locator('button').click();
+    for (let i = 0; i < limit; i++) {
+        const item = items.nth(i);
+        const name = (await item.locator('//div[contains(@class,"inventory_item_name")]').textContent()).trim();
+        addedItems.push(name);
+
+        await item.locator('//button[contains(text(),"Add to cart")]').click();
+        console.log(`Added to cart: ${name}`);
     }
 
-    
     return addedItems;
-  }
+}
+
 
 async getAllProductNames() {
     const items = this.locators.inventoryItems();
@@ -31,10 +32,9 @@ async getAllProductNames() {
 
     for (let i = 0; i < total; i++) {
       const item = items.nth(i);
-      const name = (await item.locator('.inventory_item_name').textContent()).trim();
+      const name = (await item.locator('//div[contains(@class,"inventory_item_name")]').textContent()).trim();
       names.push(name);
     }
-
     return names;
   }
   async gotoCart() {
