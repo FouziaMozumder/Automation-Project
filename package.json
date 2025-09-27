@@ -1,0 +1,35 @@
+{
+  "name": "automation-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+  "test": "npx playwright test --headed",
+  "getReport": "allure generate allure-results --clean -o allure-report",
+  "openReport": "allure open allure-report"
+  },
+  
+  "author": "Fouzia Mozumder Himi",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.2",
+    "allure-commandline": "^2.12.1",
+    "allure-playwright": "^3.2.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "chai": "^6.0.1",
+    "chromedriver": "^140.0.3",
+    "mocha": "^11.7.2",
+    "mocha-allure-reporter": "^1.4.0",
+    "playwright": "^1.55.1",
+    "playwright-core": "^1.55.1",
+    "selenium-webdriver": "^4.35.0",
+    "undici-types": "^7.12.0"
+  },
+  "keywords": [],
+  "description": ""
+}

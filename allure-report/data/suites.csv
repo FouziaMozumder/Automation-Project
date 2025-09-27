@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3647","Q2. Standard user purchase journey","chromium","Sat Sep 27 16:06:26 GMT+06:00 2025","passed","Sat Sep 27 16:06:30 GMT+06:00 2025","SauceDemo Scenarios","run.spec.js","",""
+"","1172","Q1: locked_out_user shows error","chromium","Sat Sep 27 16:06:25 GMT+06:00 2025","passed","Sat Sep 27 16:06:26 GMT+06:00 2025","SauceDemo Scenarios","run.spec.js","",""
+"","13624","Q3. Performance glitch user purchase journey","chromium","Sat Sep 27 16:06:30 GMT+06:00 2025","passed","Sat Sep 27 16:06:44 GMT+06:00 2025","SauceDemo Scenarios","run.spec.js","",""
