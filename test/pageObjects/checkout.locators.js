@@ -27,6 +27,11 @@ export class CheckoutLocators {
     return this.page.locator('//div[@class="cart_item"]//div[@class="inventory_item_name"]');
   }
 
+  overviewItemPrices() {
+  return this.page.locator('//div[@class="cart_item"]//div[@class="inventory_item_price"]');
+}
+
+
   itemTotalLabel() {
     return this.page.locator('//div[@class="summary_subtotal_label"]');
   }

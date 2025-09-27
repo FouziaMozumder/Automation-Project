@@ -25,7 +25,7 @@ export default class CheckoutPage {
   }
 
   async getOverviewItemPrices() {
-    return this.page.locator('.cart_item .inventory_item_price').allTextContents();
+    return await this.locators.overviewItemPrices().allTextContents();
 }
 
   async getItemTotal() {

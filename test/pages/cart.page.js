@@ -11,7 +11,7 @@ export default class CartPage {
   }
 
   async getCartItemPrices() {
-    return this.page.locator('.cart_item .inventory_item_price').allTextContents();
+    return await this.locators.cartItemsPrice().allTextContents();
 }
 
   async checkout() {
