@@ -14,7 +14,7 @@ Q3|Login with performance_glitch_user and reset the App State. Then filter by na
 ```bash
 git clone https://github.com/FouziaMozumder/Automation-Project.git
 ```
-## Instrictions
+## Instructions
 
 ### Generate allure report
 ```bash
